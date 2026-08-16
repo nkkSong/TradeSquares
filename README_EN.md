@@ -2,12 +2,12 @@
 
 [中文](README.md) | [English](README_EN.md)
 
-> A cart-based shop mod for Minecraft NeoForge 1.21.1: JSON config + server-authoritative trading + vanilla UI.
+> TradeSquares (交易方市): a shop mod for Minecraft NeoForge 1.21.1 — JSON config + server-authoritative trading + vanilla UI.
 > Built from scratch, inspired by the design ideas of SDMShop / ViScriptShop / quest-shop, with no heavy UI library dependencies.
 
 ## What is this / Why
 
-TradeSquares was born from the author's own server needs: existing shop mods update slowly and their interactions don't fit how we actually play, so this shop mod ("JSON config + shopping cart + server-authoritative trading") was implemented from scratch. If you also need a lightweight, configurable, anti-dupe NeoForge shop solution, it might suit you too.
+TradeSquares was born from the author's own server needs: a lightweight, configurable, server-authoritative NeoForge shop solution. It was implemented from scratch as a JSON-config + trading + vanilla-UI mod — ready to use out of the box, with no heavy UI library dependencies. If you are looking for something similar, it may be worth a look.
 
 ## Important notices
 
