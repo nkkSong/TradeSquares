@@ -2,12 +2,12 @@
 
 [中文](README.md) | [English](README_EN.md)
 
-> 交易方市（TradeSquares）：NeoForge 1.21.1 商店模组，JSON 配置 + 服务端权威交易 + vanilla 界面。
+> 交易方市（TradeSquares）：NeoForge 1.21.1 商店模组，JSON 配置即用、交易防刷、原版界面。
 > 全新实现，参考 SDMShop / ViScriptShop / quest-shop 的思路，不依赖任何重型 UI 库。
 
 ## 这是什么 / 为什么做
 
-交易方市诞生于作者自己的服务器需求：想要一个轻量、可配置、服务端权威的 NeoForge 商店方案，于是从零实现了这个「JSON 配置 + 商店交易 + vanilla 界面」的模组。它配置即用、不依赖重型 UI 库；如果你也在找类似的方案，可以参考。
+交易方市诞生于作者自己的游玩需求：想要一个轻量、可配置、防刷的 NeoForge 商店方案，于是从零实现了这个「JSON 配置 + 商店交易 + 原版界面」的模组。它配置即用、不依赖重型 UI 库；如果你也在找类似的方案，可以参考。
 
 ## 重要声明
 
@@ -20,9 +20,9 @@
 
 **已实现（M1-M4）**
 
-- 每商店一个 JSON 配置文件（`config/tradesquares/shops/`），`/shop reload` 热重载
-- 以物换物 + 货币买卖（内置虚拟余额，玩家持久化）
-- 购物车 GUI（左键加购/右键移出/底部结算，服务端权威校验防刷）
+- 每商店一个 JSON 配置文件（`config/tradesquares/shops/`），改配置后 `/shop reload` 立即生效
+- 以物换物 + 货币买卖（内置虚拟余额，余额存进存档）
+- 购物车 GUI（左键加购/右键移出/底部结算；交易由服务端校验，防刷物品/刷钱）
 - 命令：`/shop open/list/reload/buy/money`
 - 全局配置 `config/tradesquares-common.toml`（货币符号/初始余额/上限/出售开关/单次上限）
 - **可换皮**：界面贴图走资源包路径 `assets/tradesquares/textures/gui/shop.png`，覆盖即换肤

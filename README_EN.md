@@ -2,12 +2,12 @@
 
 [中文](README.md) | [English](README_EN.md)
 
-> TradeSquares (交易方市): a shop mod for Minecraft NeoForge 1.21.1 — JSON config + server-authoritative trading + vanilla UI.
+> TradeSquares (交易方市): a shop mod for Minecraft NeoForge 1.21.1 — JSON config, dupe-proof trading, vanilla UI.
 > Built from scratch, inspired by the design ideas of SDMShop / ViScriptShop / quest-shop, with no heavy UI library dependencies.
 
 ## What is this / Why
 
-TradeSquares was born from the author's own server needs: a lightweight, configurable, server-authoritative NeoForge shop solution. It was implemented from scratch as a JSON-config + trading + vanilla-UI mod — ready to use out of the box, with no heavy UI library dependencies. If you are looking for something similar, it may be worth a look.
+TradeSquares was born from the author's own gameplay needs: a lightweight, configurable, dupe-proof NeoForge shop solution. It was implemented from scratch as a JSON-config + trading + vanilla-UI mod — ready to use out of the box, with no heavy UI library dependencies. If you are looking for something similar, it may be worth a look.
 
 ## Important notices
 
@@ -20,9 +20,9 @@ TradeSquares was born from the author's own server needs: a lightweight, configu
 
 **Implemented (M1–M4)**
 
-- One JSON config file per shop (`config/tradesquares/shops/`), hot-reload via `/shop reload`
-- Item-for-item trading + currency buy/sell (built-in virtual balance, persisted per player)
-- Shopping cart GUI (left-click to add / right-click to remove / checkout at the bottom; server-authoritative validation to prevent duping)
+- One JSON config file per shop (`config/tradesquares/shops/`), applied immediately with `/shop reload`
+- Item-for-item trading + currency buy/sell (built-in virtual balance, saved to the save file)
+- Shopping cart GUI (left-click to add / right-click to remove / checkout at the bottom; transactions are validated on the server to prevent item/money duping)
 - Commands: `/shop open/list/reload/buy/money`
 - Global config `config/tradesquares-common.toml` (currency symbol / initial balance / cap / selling toggle / per-purchase cap)
 - **Reskinnable**: the GUI texture is served from the resource pack path `assets/tradesquares/textures/gui/shop.png` — override it to reskin
