@@ -18,3 +18,8 @@ Desktop.ini
 release/
 *.jar
 !gradle/wrapper/gradle-wrapper.jar
+
+# 内部文档（nm 管理文档，不进公开仓库；2026-08-16 误提交事故后加）
+进度.md
+经验.md
+docs/
