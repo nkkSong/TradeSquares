@@ -18,16 +18,20 @@
 
 ## 功能
 
-**已实现（M1-M4）**
+**已实现（一期 M1-M5 + 易用性）**
 
 - 每商店一个 JSON 配置文件（`config/tradesquares/shops/`），改配置后 `/shop reload` 立即生效
-- 以物换物 + 货币买卖（内置虚拟余额，余额存进存档）
-- 购物车 GUI（左键加购/右键移出/底部结算；交易由服务端校验，防刷物品/刷钱）
-- 命令：`/shop open/list/reload/buy/money`
+- 以物换物 + 货币买卖（内置虚拟余额，余额存进存档，重启不丢）
+- 购物车 GUI：左键加购/右键移出/底部结算；购买/出售模式切换 + 分类过滤；批量操作（Shift±10 / Ctrl±64 / Tab=设满 / 滚轮批量，加购自动上限约束）；交易由服务端校验，防刷物品/刷钱
+- 出售给商店：商店条目支持收购（`give.money` + `cost.items` 反向表达），玩家把物品卖给商店换货币
+- 命令：`/shop open/list/reload/buy/additem/import/money`
+- `/shop additem`：手持物品直接入库，免手写 JSON
+- `/shop import`：CSV 批量导入（模板+示例 CSV 已配套；物品列支持 id/路径/英文名模糊匹配，逐行报错）
+- 预设物价：`预设/原版物价.json`（5 分类 61 条目）+ 生成脚本 `tools/gen_prices.py`
 - 全局配置 `config/tradesquares-common.toml`（货币符号/初始余额/上限/出售开关/单次上限）
 - **可换皮**：界面贴图走资源包路径 `assets/tradesquares/textures/gui/shop.png`，覆盖即换肤
 
-**规划中**：游戏内可视化编辑器、多货币适配（Lightman's/Magic Coins/SG Economy）、KubeJS/JEI/FTB Quests 联动。
+**二期规划**：出货箱 → 兑换箱 → 投递箱 → 玩家交易（公共市场/实体柜台，双开关可配）→ 摆摊方块；库存箱（扩容 54+9n/店主店员权限/漏斗补货/链接器绑定）、升级体系（防爆/保险/无线）、营业机制（红石开店打烊/自动售货）；游戏内可视化编辑器；多货币适配（Lightman's/Magic Coins/SG Economy）；KubeJS/JEI/FTB Quests 联动。详见 `docs/功能规划.md`。
 
 ## 安装
 
@@ -107,6 +111,8 @@
 | `/shop reload` | 重新加载商店配置（改 JSON 后执行） |
 | `/shop list` | 列出已加载商店 |
 | `/shop buy <商店> <分类> <条目> <数量>` | 直接购买（测试/脚本用） |
+| `/shop additem [商店] [分类]` | 手持物品入库（快捷添加条目） |
+| `/shop import <CSV文件> [覆盖]` | CSV 批量导入（模板见 `预设/导入模板.csv`） |
 | `/shop money get [玩家]` | 查余额 |
 | `/shop money add <玩家> <金额>` | 加钱 |
 | `/shop money remove <玩家> <金额>` | 扣钱 |
@@ -139,7 +145,8 @@
 | M3 交易服务端 | ✅ 完成 |
 | M4 GUI+购物车 | ✅ 完成 |
 | M5 收尾（命令/文档/内测 jar） | ✅ 完成 |
-| M6 发布准备 | 待定 |
+| 易用性 A/B/C（additem / 预设物价 / CSV 导入） | ✅ 完成 |
+| M6 发布准备 | 🔄 进行中（已推送 GitHub 公开仓库，v0.1.0 Release 待发） |
 | M7 可视化编辑器 | 二期 |
 | M8 联动 | 二期 |
 

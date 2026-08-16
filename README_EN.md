@@ -18,16 +18,20 @@ TradeSquares was born from the author's own gameplay needs: a lightweight, confi
 
 ## Features
 
-**Implemented (M1–M4)**
+**Implemented (Phase 1: M1–M5 + usability)**
 
 - One JSON config file per shop (`config/tradesquares/shops/`), applied immediately with `/shop reload`
-- Item-for-item trading + currency buy/sell (built-in virtual balance, saved to the save file)
-- Shopping cart GUI (left-click to add / right-click to remove / checkout at the bottom; transactions are validated on the server to prevent item/money duping)
-- Commands: `/shop open/list/reload/buy/money`
+- Item-for-item trading + currency buy/sell (built-in virtual balance, saved to the save file, survives restarts)
+- Shopping cart GUI: left-click add / right-click remove / checkout at the bottom; buy/sell mode switch + category filter; batch operations (Shift±10 / Ctrl±64 / Tab=max / scroll batch, with auto caps); transactions are validated on the server to prevent item/money duping
+- Sell to shops: entries support buyback (`give.money` + `cost.items` expressed in reverse) — players sell items to shops for currency
+- Commands: `/shop open/list/reload/buy/additem/import/money`
+- `/shop additem`: add the item in hand directly to a shop, no hand-written JSON needed
+- `/shop import`: CSV batch import (template + example CSV included; item column supports id/path/English-name fuzzy match, per-row errors)
+- Preset prices: `预设/原版物价.json` (5 categories, 61 entries) + generator script `tools/gen_prices.py`
 - Global config `config/tradesquares-common.toml` (currency symbol / initial balance / cap / selling toggle / per-purchase cap)
 - **Reskinnable**: the GUI texture is served from the resource pack path `assets/tradesquares/textures/gui/shop.png` — override it to reskin
 
-**Planned**: in-game visual editor, multi-currency support (Lightman's / Magic Coins / SG Economy), KubeJS / JEI / FTB Quests integration.
+**Phase 2 roadmap**: Sell box → Exchange box → Delivery box → Player trading (public market / physical counter, two independent toggles) → Stall blocks; stock chest (expansion 54+9n / owner-clerk permissions / hopper restock / linker binding), upgrade system (blast-proof / insurance / wireless), business mechanics (redstone open-close / vending); in-game visual editor; multi-currency support (Lightman's / Magic Coins / SG Economy); KubeJS / JEI / FTB Quests integration. See `docs/功能规划.md` for details.
 
 ## Installation
 
@@ -107,6 +111,8 @@ One shop = one JSON file; all fields are flat and optional. Core rule: **one ent
 | `/shop reload` | Reload shop configs (run after editing JSON) |
 | `/shop list` | List loaded shops |
 | `/shop buy <shop> <category> <entry> <amount>` | Buy directly (for testing / scripts) |
+| `/shop additem [shop] [category]` | Add the item in hand to a shop (quick entry) |
+| `/shop import <CSV file> [overwrite]` | CSV batch import (template in `预设/导入模板.csv`) |
 | `/shop money get [player]` | Check balance |
 | `/shop money add <player> <amount>` | Add money |
 | `/shop money remove <player> <amount>` | Remove money |
@@ -139,7 +145,8 @@ Make a resource pack and override that path to reskin; the UI falls back to a so
 | M3 Trading server | ✅ Done |
 | M4 GUI + cart | ✅ Done |
 | M5 Wrap-up (commands/docs/internal-test jar) | ✅ Done |
-| M6 Release prep | Pending |
+| Usability A/B/C (additem / preset prices / CSV import) | ✅ Done |
+| M6 Release prep | 🔄 In progress (pushed to public GitHub repo; v0.1.0 release pending) |
 | M7 Visual editor | Phase 2 |
 | M8 Integrations | Phase 2 |
 
