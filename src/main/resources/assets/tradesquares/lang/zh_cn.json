@@ -1,0 +1,22 @@
+{
+  "command.tradesquares.reload.ok": "已加载 %s 个商店，%s 个错误",
+  "command.tradesquares.reload.errors": "错误：%s",
+  "command.tradesquares.list.empty": "没有已加载的商店（检查 config/tradesquares/shops/）",
+  "command.tradesquares.list": "已加载商店：%s",
+  "command.tradesquares.open.not_ready": "商店界面将在 M4 里程碑开放",
+  "command.tradesquares.money.get": "%s 的货币：%s",
+  "command.tradesquares.money.add": "已给 %s 添加 %s（现 %s）",
+  "command.tradesquares.money.remove": "已从 %s 扣除 %s（现 %s）",
+  "command.tradesquares.money.set": "已将 %s 的货币设为 %s",
+  "command.tradesquares.money.pay": "%s 向 %s 支付了 %s（%s 现 %s）",
+  "command.tradesquares.money.not_enough": "%s 货币不足",
+  "command.tradesquares.buy.ok": "购买成功：%s x%s（支付 %s / 获得 %s，物品 +%s，经验 +%s）",
+  "command.tradesquares.buy.fail.empty_cart": "购物车为空",
+  "command.tradesquares.buy.fail.entry_not_found": "商品不存在（检查商店配置）",
+  "command.tradesquares.buy.fail.not_enough_items": "物品不足",
+  "command.tradesquares.buy.fail.not_enough_money": "货币不足",
+  "command.tradesquares.buy.fail.out_of_stock": "库存不足",
+  "command.tradesquares.buy.fail.too_many_items": "超过单次购买物品上限",
+  "command.tradesquares.buy.fail.selling_disabled": "出售功能已被服务器关闭",
+  "gui.tradesquares.buy.ok": "购买成功！"
+}

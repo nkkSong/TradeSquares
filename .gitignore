@@ -1,0 +1,20 @@
+# Gradle
+.gradle/
+build/
+out/
+bin/
+run/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# 本地产物
+release/
+*.jar
+!gradle/wrapper/gradle-wrapper.jar

@@ -1,0 +1,13 @@
+﻿分类,物品,数量,买价,卖价
+食物,bread,1,2,
+食物,cooked_beef,4,8,3
+食物,golden_apple,1,60,20
+食物,baked_potato,8,3,1
+矿物,iron_ingot,1,10,5
+矿物,gold_ingot,1,20,10
+矿物,diamond,1,100,80
+矿物,emerald,1,30,20
+工具,iron_pickaxe,1,30,
+工具,diamond_sword,1,150,60
+杂项,ender_pearl,4,40,15
+杂项,ender_eye,1,45,20

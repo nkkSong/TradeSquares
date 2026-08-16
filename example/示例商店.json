@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "main",
+  "name": "主城商店",
+  "currency": "default",
+  "categories": [
+    {
+      "id": "food",
+      "name": "食物",
+      "icon": "minecraft:cooked_beef",
+      "items": [
+        {
+          "id": "beef",
+          "icon": "minecraft:cooked_beef",
+          "name": "熟牛排",
+          "desc": ["香喷喷，管饱"],
+          "give": { "items": [ { "item": "minecraft:cooked_beef", "count": 4 } ], "money": 0, "xp": 0 },
+          "cost": { "items": [ { "item": "minecraft:gold_ingot", "count": 2 } ], "money": 0 }
+        },
+        {
+          "id": "golden_apple",
+          "icon": "minecraft:golden_apple",
+          "name": "金苹果",
+          "give": { "items": [ { "item": "minecraft:golden_apple", "count": 1 } ] },
+          "cost": { "items": [], "money": 50 }
+        }
+      ]
+    },
+    {
+      "id": "materials",
+      "name": "材料",
+      "icon": "minecraft:iron_ingot",
+      "items": [
+        {
+          "id": "iron",
+          "icon": "minecraft:iron_ingot",
+          "name": "铁锭",
+          "give": { "items": [ { "item": "minecraft:iron_ingot", "count": 1 } ] },
+          "cost": { "money": 10 }
+        },
+        {
+          "id": "diamond",
+          "icon": "minecraft:diamond",
+          "name": "钻石",
+          "give": { "items": [ { "item": "minecraft:diamond", "count": 1 } ] },
+          "cost": { "money": 100 }
+        }
+      ]
+    },
+    {
+      "id": "buyback",
+      "name": "收购",
+      "icon": "minecraft:emerald",
+      "items": [
+        {
+          "id": "sell_iron",
+          "name": "收购铁锭",
+          "give": { "money": 5 },
+          "cost": { "items": [ { "item": "minecraft:iron_ingot", "count": 1 } ] }
+        }
+      ]
+    }
+  ]
+}

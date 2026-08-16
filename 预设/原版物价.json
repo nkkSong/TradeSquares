@@ -1,0 +1,466 @@
+{
+  "schema": 1,
+  "id": "vanilla",
+  "name": "原版物价",
+  "currency": "default",
+  "categories": [
+    {
+      "id": "food",
+      "name": "食物",
+      "icon": "minecraft:bread",
+      "items": [
+        {
+          "id": "bread",
+          "icon": "minecraft:bread",
+          "name": "面包",
+          "give": { "items": [ { "item": "minecraft:bread", "count": 1 } ] },
+          "cost": { "money": 2 }
+        },
+        {
+          "id": "apple",
+          "icon": "minecraft:apple",
+          "name": "苹果",
+          "give": { "items": [ { "item": "minecraft:apple", "count": 1 } ] },
+          "cost": { "money": 4 }
+        },
+        {
+          "id": "golden_apple",
+          "icon": "minecraft:golden_apple",
+          "name": "金苹果",
+          "give": { "items": [ { "item": "minecraft:golden_apple", "count": 1 } ] },
+          "cost": { "money": 60 }
+        },
+        {
+          "id": "cooked_beef",
+          "icon": "minecraft:cooked_beef",
+          "name": "熟牛排",
+          "give": { "items": [ { "item": "minecraft:cooked_beef", "count": 1 } ] },
+          "cost": { "money": 8 }
+        },
+        {
+          "id": "cooked_porkchop",
+          "icon": "minecraft:cooked_porkchop",
+          "name": "熟猪排",
+          "give": { "items": [ { "item": "minecraft:cooked_porkchop", "count": 1 } ] },
+          "cost": { "money": 8 }
+        },
+        {
+          "id": "cooked_chicken",
+          "icon": "minecraft:cooked_chicken",
+          "name": "熟鸡肉",
+          "give": { "items": [ { "item": "minecraft:cooked_chicken", "count": 1 } ] },
+          "cost": { "money": 5 }
+        },
+        {
+          "id": "baked_potato",
+          "icon": "minecraft:baked_potato",
+          "name": "烤马铃薯",
+          "give": { "items": [ { "item": "minecraft:baked_potato", "count": 1 } ] },
+          "cost": { "money": 3 }
+        },
+        {
+          "id": "carrot",
+          "icon": "minecraft:carrot",
+          "name": "胡萝卜",
+          "give": { "items": [ { "item": "minecraft:carrot", "count": 1 } ] },
+          "cost": { "money": 2 }
+        },
+        {
+          "id": "beetroot_soup",
+          "icon": "minecraft:beetroot_soup",
+          "name": "甜菜汤",
+          "give": { "items": [ { "item": "minecraft:beetroot_soup", "count": 1 } ] },
+          "cost": { "money": 4 }
+        },
+        {
+          "id": "pumpkin_pie",
+          "icon": "minecraft:pumpkin_pie",
+          "name": "南瓜派",
+          "give": { "items": [ { "item": "minecraft:pumpkin_pie", "count": 1 } ] },
+          "cost": { "money": 6 }
+        },
+        {
+          "id": "cookie",
+          "icon": "minecraft:cookie",
+          "name": "曲奇",
+          "give": { "items": [ { "item": "minecraft:cookie", "count": 1 } ] },
+          "cost": { "money": 1 }
+        },
+        {
+          "id": "cake",
+          "icon": "minecraft:cake",
+          "name": "蛋糕",
+          "give": { "items": [ { "item": "minecraft:cake", "count": 1 } ] },
+          "cost": { "money": 20 }
+        },
+        {
+          "id": "melon_slice",
+          "icon": "minecraft:melon_slice",
+          "name": "西瓜片",
+          "give": { "items": [ { "item": "minecraft:melon_slice", "count": 1 } ] },
+          "cost": { "money": 1 }
+        },
+        {
+          "id": "dried_kelp",
+          "icon": "minecraft:dried_kelp",
+          "name": "干海带",
+          "give": { "items": [ { "item": "minecraft:dried_kelp", "count": 1 } ] },
+          "cost": { "money": 1 }
+        },
+        {
+          "id": "cooked_cod",
+          "icon": "minecraft:cooked_cod",
+          "name": "熟鳕鱼",
+          "give": { "items": [ { "item": "minecraft:cooked_cod", "count": 1 } ] },
+          "cost": { "money": 5 }
+        },
+        {
+          "id": "cooked_salmon",
+          "icon": "minecraft:cooked_salmon",
+          "name": "熟鲑鱼",
+          "give": { "items": [ { "item": "minecraft:cooked_salmon", "count": 1 } ] },
+          "cost": { "money": 6 }
+        },
+        {
+          "id": "sweet_berries",
+          "icon": "minecraft:sweet_berries",
+          "name": "甜浆果",
+          "give": { "items": [ { "item": "minecraft:sweet_berries", "count": 1 } ] },
+          "cost": { "money": 2 }
+        },
+        {
+          "id": "honey_bottle",
+          "icon": "minecraft:honey_bottle",
+          "name": "蜂蜜瓶",
+          "give": { "items": [ { "item": "minecraft:honey_bottle", "count": 1 } ] },
+          "cost": { "money": 10 }
+        }
+      ]
+    },
+    {
+      "id": "minerals",
+      "name": "矿物与材料",
+      "icon": "minecraft:iron_ingot",
+      "items": [
+        {
+          "id": "coal",
+          "icon": "minecraft:coal",
+          "name": "煤炭",
+          "give": { "items": [ { "item": "minecraft:coal", "count": 1 } ] },
+          "cost": { "money": 1 }
+        },
+        {
+          "id": "iron_ingot",
+          "icon": "minecraft:iron_ingot",
+          "name": "铁锭",
+          "give": { "items": [ { "item": "minecraft:iron_ingot", "count": 1 } ] },
+          "cost": { "money": 10 }
+        },
+        {
+          "id": "gold_ingot",
+          "icon": "minecraft:gold_ingot",
+          "name": "金锭",
+          "give": { "items": [ { "item": "minecraft:gold_ingot", "count": 1 } ] },
+          "cost": { "money": 20 }
+        },
+        {
+          "id": "diamond",
+          "icon": "minecraft:diamond",
+          "name": "钻石",
+          "give": { "items": [ { "item": "minecraft:diamond", "count": 1 } ] },
+          "cost": { "money": 100 }
+        },
+        {
+          "id": "emerald",
+          "icon": "minecraft:emerald",
+          "name": "绿宝石",
+          "give": { "items": [ { "item": "minecraft:emerald", "count": 1 } ] },
+          "cost": { "money": 30 }
+        },
+        {
+          "id": "redstone",
+          "icon": "minecraft:redstone",
+          "name": "红石粉",
+          "give": { "items": [ { "item": "minecraft:redstone", "count": 1 } ] },
+          "cost": { "money": 3 }
+        },
+        {
+          "id": "lapis_lazuli",
+          "icon": "minecraft:lapis_lazuli",
+          "name": "青金石",
+          "give": { "items": [ { "item": "minecraft:lapis_lazuli", "count": 1 } ] },
+          "cost": { "money": 8 }
+        },
+        {
+          "id": "quartz",
+          "icon": "minecraft:quartz",
+          "name": "下界石英",
+          "give": { "items": [ { "item": "minecraft:quartz", "count": 1 } ] },
+          "cost": { "money": 5 }
+        },
+        {
+          "id": "copper_ingot",
+          "icon": "minecraft:copper_ingot",
+          "name": "铜锭",
+          "give": { "items": [ { "item": "minecraft:copper_ingot", "count": 1 } ] },
+          "cost": { "money": 8 }
+        },
+        {
+          "id": "netherite_scrap",
+          "icon": "minecraft:netherite_scrap",
+          "name": "下界合金碎片",
+          "give": { "items": [ { "item": "minecraft:netherite_scrap", "count": 1 } ] },
+          "cost": { "money": 50 }
+        },
+        {
+          "id": "netherite_ingot",
+          "icon": "minecraft:netherite_ingot",
+          "name": "下界合金锭",
+          "give": { "items": [ { "item": "minecraft:netherite_ingot", "count": 1 } ] },
+          "cost": { "money": 500 }
+        },
+        {
+          "id": "obsidian",
+          "icon": "minecraft:obsidian",
+          "name": "黑曜石",
+          "give": { "items": [ { "item": "minecraft:obsidian", "count": 1 } ] },
+          "cost": { "money": 15 }
+        },
+        {
+          "id": "ender_pearl",
+          "icon": "minecraft:ender_pearl",
+          "name": "末影珍珠",
+          "give": { "items": [ { "item": "minecraft:ender_pearl", "count": 1 } ] },
+          "cost": { "money": 40 }
+        },
+        {
+          "id": "blaze_rod",
+          "icon": "minecraft:blaze_rod",
+          "name": "烈焰棒",
+          "give": { "items": [ { "item": "minecraft:blaze_rod", "count": 1 } ] },
+          "cost": { "money": 30 }
+        },
+        {
+          "id": "shulker_shell",
+          "icon": "minecraft:shulker_shell",
+          "name": "潜影壳",
+          "give": { "items": [ { "item": "minecraft:shulker_shell", "count": 1 } ] },
+          "cost": { "money": 150 }
+        },
+        {
+          "id": "wither_skeleton_skull",
+          "icon": "minecraft:wither_skeleton_skull",
+          "name": "凋灵骷髅头",
+          "give": { "items": [ { "item": "minecraft:wither_skeleton_skull", "count": 1 } ] },
+          "cost": { "money": 200 }
+        }
+      ]
+    },
+    {
+      "id": "gear",
+      "name": "工具与装备",
+      "icon": "minecraft:diamond_pickaxe",
+      "items": [
+        {
+          "id": "iron_pickaxe",
+          "icon": "minecraft:iron_pickaxe",
+          "name": "铁镐",
+          "give": { "items": [ { "item": "minecraft:iron_pickaxe", "count": 1 } ] },
+          "cost": { "money": 30 }
+        },
+        {
+          "id": "iron_sword",
+          "icon": "minecraft:iron_sword",
+          "name": "铁剑",
+          "give": { "items": [ { "item": "minecraft:iron_sword", "count": 1 } ] },
+          "cost": { "money": 25 }
+        },
+        {
+          "id": "diamond_pickaxe",
+          "icon": "minecraft:diamond_pickaxe",
+          "name": "钻石镐",
+          "give": { "items": [ { "item": "minecraft:diamond_pickaxe", "count": 1 } ] },
+          "cost": { "money": 200 }
+        },
+        {
+          "id": "diamond_sword",
+          "icon": "minecraft:diamond_sword",
+          "name": "钻石剑",
+          "give": { "items": [ { "item": "minecraft:diamond_sword", "count": 1 } ] },
+          "cost": { "money": 150 }
+        },
+        {
+          "id": "bow",
+          "icon": "minecraft:bow",
+          "name": "弓",
+          "give": { "items": [ { "item": "minecraft:bow", "count": 1 } ] },
+          "cost": { "money": 30 }
+        },
+        {
+          "id": "shield",
+          "icon": "minecraft:shield",
+          "name": "盾牌",
+          "give": { "items": [ { "item": "minecraft:shield", "count": 1 } ] },
+          "cost": { "money": 15 }
+        },
+        {
+          "id": "fishing_rod",
+          "icon": "minecraft:fishing_rod",
+          "name": "钓鱼竿",
+          "give": { "items": [ { "item": "minecraft:fishing_rod", "count": 1 } ] },
+          "cost": { "money": 10 }
+        },
+        {
+          "id": "elytra",
+          "icon": "minecraft:elytra",
+          "name": "鞘翅",
+          "give": { "items": [ { "item": "minecraft:elytra", "count": 1 } ] },
+          "cost": { "money": 1000 }
+        },
+        {
+          "id": "enchanted_golden_apple",
+          "icon": "minecraft:enchanted_golden_apple",
+          "name": "附魔金苹果",
+          "give": { "items": [ { "item": "minecraft:enchanted_golden_apple", "count": 1 } ] },
+          "cost": { "money": 1500 }
+        }
+      ]
+    },
+    {
+      "id": "misc",
+      "name": "红石与杂项",
+      "icon": "minecraft:redstone",
+      "items": [
+        {
+          "id": "redstone_torch",
+          "icon": "minecraft:redstone_torch",
+          "name": "红石火把",
+          "give": { "items": [ { "item": "minecraft:redstone_torch", "count": 1 } ] },
+          "cost": { "money": 5 }
+        },
+        {
+          "id": "piston",
+          "icon": "minecraft:piston",
+          "name": "活塞",
+          "give": { "items": [ { "item": "minecraft:piston", "count": 1 } ] },
+          "cost": { "money": 15 }
+        },
+        {
+          "id": "observer",
+          "icon": "minecraft:observer",
+          "name": "观察者",
+          "give": { "items": [ { "item": "minecraft:observer", "count": 1 } ] },
+          "cost": { "money": 15 }
+        },
+        {
+          "id": "chest",
+          "icon": "minecraft:chest",
+          "name": "箱子",
+          "give": { "items": [ { "item": "minecraft:chest", "count": 1 } ] },
+          "cost": { "money": 5 }
+        },
+        {
+          "id": "hopper",
+          "icon": "minecraft:hopper",
+          "name": "漏斗",
+          "give": { "items": [ { "item": "minecraft:hopper", "count": 1 } ] },
+          "cost": { "money": 20 }
+        },
+        {
+          "id": "dispenser",
+          "icon": "minecraft:dispenser",
+          "name": "发射器",
+          "give": { "items": [ { "item": "minecraft:dispenser", "count": 1 } ] },
+          "cost": { "money": 30 }
+        },
+        {
+          "id": "ender_chest",
+          "icon": "minecraft:ender_chest",
+          "name": "末影箱",
+          "give": { "items": [ { "item": "minecraft:ender_chest", "count": 1 } ] },
+          "cost": { "money": 100 }
+        },
+        {
+          "id": "rail",
+          "icon": "minecraft:rail",
+          "name": "铁轨",
+          "give": { "items": [ { "item": "minecraft:rail", "count": 1 } ] },
+          "cost": { "money": 2 }
+        },
+        {
+          "id": "powered_rail",
+          "icon": "minecraft:powered_rail",
+          "name": "动力铁轨",
+          "give": { "items": [ { "item": "minecraft:powered_rail", "count": 1 } ] },
+          "cost": { "money": 8 }
+        },
+        {
+          "id": "slime_ball",
+          "icon": "minecraft:slime_ball",
+          "name": "粘液球",
+          "give": { "items": [ { "item": "minecraft:slime_ball", "count": 1 } ] },
+          "cost": { "money": 15 }
+        },
+        {
+          "id": "rabbit_foot",
+          "icon": "minecraft:rabbit_foot",
+          "name": "兔子脚",
+          "give": { "items": [ { "item": "minecraft:rabbit_foot", "count": 1 } ] },
+          "cost": { "money": 30 }
+        },
+        {
+          "id": "experience_bottle",
+          "icon": "minecraft:experience_bottle",
+          "name": "附魔之瓶",
+          "give": { "items": [ { "item": "minecraft:experience_bottle", "count": 1 } ] },
+          "cost": { "money": 40 }
+        },
+        {
+          "id": "book",
+          "icon": "minecraft:book",
+          "name": "书",
+          "give": { "items": [ { "item": "minecraft:book", "count": 1 } ] },
+          "cost": { "money": 5 }
+        },
+        {
+          "id": "ender_eye",
+          "icon": "minecraft:ender_eye",
+          "name": "末影之眼",
+          "give": { "items": [ { "item": "minecraft:ender_eye", "count": 1 } ] },
+          "cost": { "money": 45 }
+        }
+      ]
+    },
+    {
+      "id": "buyback",
+      "name": "收购",
+      "icon": "minecraft:emerald",
+      "items": [
+        {
+          "id": "sell_cobblestone",
+          "name": "收购圆石",
+          "give": { "money": 1 },
+          "cost": { "items": [ { "item": "minecraft:cobblestone", "count": 32 } ] }
+        },
+        {
+          "id": "sell_dirt",
+          "name": "收购泥土",
+          "give": { "money": 1 },
+          "cost": { "items": [ { "item": "minecraft:dirt", "count": 16 } ] }
+        },
+        {
+          "id": "sell_stone",
+          "name": "收购石头",
+          "give": { "money": 2 },
+          "cost": { "items": [ { "item": "minecraft:stone", "count": 16 } ] }
+        },
+        {
+          "id": "sell_bread",
+          "name": "收购面包",
+          "give": { "money": 1 },
+          "cost": { "items": [ { "item": "minecraft:bread", "count": 1 } ] }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="MIT"
+
+[[mods]]
+modId="tradesquares"
+version="0.1.0"
+displayName="TradeSquares"
+description='''交易方市（TradeSquares）：购物车商店模组。JSON 配置 + 服务端权威交易 + vanilla 界面。'''
+
+[[dependencies.tradesquares]]
+modId="neoforge"
+type="required"
+versionRange="[21,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.tradesquares]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.22)"
+ordering="NONE"
+side="BOTH"

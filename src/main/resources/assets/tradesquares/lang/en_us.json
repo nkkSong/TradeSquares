@@ -1,0 +1,22 @@
+{
+  "command.tradesquares.reload.ok": "Loaded %s shops, %s errors",
+  "command.tradesquares.reload.errors": "Errors: %s",
+  "command.tradesquares.list.empty": "No shops loaded (check config/tradesquares/shops/)",
+  "command.tradesquares.list": "Loaded shops: %s",
+  "command.tradesquares.open.not_ready": "Shop GUI will be available in milestone M4",
+  "command.tradesquares.money.get": "%s balance: %s",
+  "command.tradesquares.money.add": "Added %s to %s (now %s)",
+  "command.tradesquares.money.remove": "Removed %s from %s (now %s)",
+  "command.tradesquares.money.set": "Set %s balance to %s",
+  "command.tradesquares.money.pay": "%s paid %s %s (%s now %s)",
+  "command.tradesquares.money.not_enough": "%s has insufficient funds",
+  "command.tradesquares.buy.ok": "Purchased: %s x%s (paid %s / gained %s, items +%s, xp +%s)",
+  "command.tradesquares.buy.fail.empty_cart": "Cart is empty",
+  "command.tradesquares.buy.fail.entry_not_found": "Item not found (check shop config)",
+  "command.tradesquares.buy.fail.not_enough_items": "Not enough items",
+  "command.tradesquares.buy.fail.not_enough_money": "Not enough money",
+  "command.tradesquares.buy.fail.out_of_stock": "Out of stock",
+  "command.tradesquares.buy.fail.too_many_items": "Exceeds per-purchase item limit",
+  "command.tradesquares.buy.fail.selling_disabled": "Selling is disabled on this server",
+  "gui.tradesquares.buy.ok": "Purchase successful!"
+}
