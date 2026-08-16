@@ -31,7 +31,7 @@ TradeSquares was born from the author's own gameplay needs: a lightweight, confi
 - Global config `config/tradesquares-common.toml` (currency symbol / initial balance / cap / selling toggle / per-purchase cap)
 - **Reskinnable**: the GUI texture is served from the resource pack path `assets/tradesquares/textures/gui/shop.png` — override it to reskin
 
-**Phase 2 roadmap**: Sell box → Exchange box → Delivery box → Player trading (public market / physical counter, two independent toggles) → Stall blocks; stock chest (expansion 54+9n / owner-clerk permissions / hopper restock / linker binding), upgrade system (blast-proof / insurance / wireless), business mechanics (redstone open-close / vending); in-game visual editor; multi-currency support (Lightman's / Magic Coins / SG Economy); KubeJS / JEI / FTB Quests integration. See `docs/功能规划.md` for details.
+**Phase 2 roadmap**: Sell box → Exchange box → Delivery box → Player trading (public market / physical counter, two independent toggles) → Stall blocks; stock chest (expansion 54+9n / owner-clerk permissions / hopper restock / linker binding), upgrade system (blast-proof / insurance / wireless), business mechanics (redstone open-close / vending); in-game visual editor; multi-currency support (Lightman's / Magic Coins / SG Economy); KubeJS / JEI / FTB Quests integration.
 
 ## Installation
 
@@ -149,8 +149,6 @@ Make a resource pack and override that path to reskin; the UI falls back to a so
 | M6 Release prep | 🔄 In progress (pushed to public GitHub repo; v0.1.0 release pending) |
 | M7 Visual editor | Phase 2 |
 | M8 Integrations | Phase 2 |
-
-See `docs/设计草案.md`, `docs/对标表.md`, `docs/参考调研.md` for details; progress in `进度.md`.
 
 ## Building
 
